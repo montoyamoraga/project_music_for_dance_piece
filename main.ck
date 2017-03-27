@@ -1,13 +1,15 @@
 //main interface for dance piece
 //by aaron montoya-moraga
-//v0.0.1
+//v0.0.2
 
 //variable for holding tempo in bpm and milliseconds
 float bpm;
 float msPerBeat;
 
-//variable for storing the current ms
-0 => int currentMs;
+//variable for storing the current ms, second and minute
+int currentMs;
+int currentSecond;
+int currentMinute;
 
 //variables for storing the duration in minutes and ms
 float durationMinutes;
@@ -29,6 +31,17 @@ function void setBpm(float newBpm) {
   bpm * 60 * 1000 => msPerBeat;
 }
 
+function void initialize() {
+  0 => currentMs;
+  0 => currentSecond;
+  0 => currentMinute;
+}
+
+function void displayCurrentTime() {
+  currentMs / 1000 % 60 => currentSecond;
+  currentMs / 1000 / 60 => currentMinute;
+  <<< "current moment is " + currentMinute +  ":" + currentSecond >>>;
+}
 
 //start the piece
 <<< "start the piece">>>;
@@ -40,3 +53,16 @@ setBpm(90);
 //set duration to be 5 minutes
 setDuration(5);
 <<< "the piece lasts " + durationMinutes + " minutes, or " + durationMs + " ms">>>;
+
+//while the current time is less than the duration of the piece
+while(currentMs < durationMs) {
+  //let time flow
+  1 :: ms => now;
+  //advance 1 ms
+  currentMs + 1 => currentMs;
+  //display current time
+  displayCurrentTime();
+}
+
+//piece ended
+<<< "piece ended" >>>;
