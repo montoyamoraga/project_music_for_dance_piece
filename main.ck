@@ -4,7 +4,7 @@
 
 //variable for holding tempo in bpm and milliseconds
 float bpm;
-float millisPerBeat;
+float msPerBeat;
 
 //variable for storing the current ms
 0 => int currentMs;
@@ -26,5 +26,17 @@ function void setBpm(float newBpm) {
   //assigning the new bpm
   newBpm => bpm;
   //updating millis per beat
-  bpm * 60 * 1000 => millisPerBeat;
+  bpm * 60 * 1000 => msPerBeat;
 }
+
+
+//start the piece
+<<< "start the piece">>>;
+
+//set bpm
+setBpm(90);
+<<< bpm + " bpm, " + msPerBeat + " ms per beat" >>>;
+
+//set duration to be 5 minutes
+setDuration(5);
+<<< "the piece lasts " + durationMinutes + " minutes, or " + durationMs + " ms">>>;
