@@ -2,9 +2,9 @@
 //by aaron montoya-moraga
 //v0.0.1
 
-//variable for holding tempo
-90 => float bpm;
-//
+//variable for holding tempo in bpm and milliseconds
+float bpm;
+float millisPerBeat;
 
 //variable for storing the current ms
 0 => int currentMs;
@@ -21,6 +21,10 @@ function void setDuration(float minutes) {
   durationMinutes * 60 * 1000 => durationMs;
 }
 
-//function for
-function void bpmToms(float bpm) {
+//function for setting up the bpm
+function void setBpm(float newBpm) {
+  //assigning the new bpm
+  newBpm => bpm;
+  //updating millis per beat
+  bpm * 60 * 1000 => millisPerBeat;
 }
