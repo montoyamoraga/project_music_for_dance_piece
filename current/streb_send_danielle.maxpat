@@ -43,9 +43,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.0, 123.0, 80.0, 22.0 ],
+					"patching_rect" : [ 34.0, 83.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "dancer_send"
+					"text" : "send_dancer"
 				}
 
 			}
@@ -532,7 +532,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "dancer_send.maxpat",
+				"name" : "send_dancer.maxpat",
 				"bootpath" : "~/github/montoyamoraga/project_streb/current/streb Project",
 				"type" : "JSON",
 				"implicit" : 1

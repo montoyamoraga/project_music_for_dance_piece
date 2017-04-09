@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 367.0, 79.0, 879.0, 660.0 ],
+		"rect" : [ 219.0, 79.0, 879.0, 660.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,49 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 426.0, 176.0, 67.0, 20.0 ],
+					"style" : "",
+					"text" : "parse data"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 676.0, 111.0, 29.0, 20.0 ],
+					"presentation_rect" : [ 619.0, 99.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "lisa"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 296.0, 112.0, 52.0, 20.0 ],
+					"style" : "",
+					"text" : "danielle"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.0, 135.0, 99.0, 22.0 ],
+					"patching_rect" : [ 495.0, 147.0, 99.0, 22.0 ],
 					"style" : "",
 					"text" : "/lisa /heartbeat 0"
 				}
@@ -56,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 522.0, 99.0, 99.0, 22.0 ],
+					"patching_rect" : [ 575.0, 111.0, 99.0, 22.0 ],
 					"style" : "",
 					"text" : "udpreceive 5501"
 				}
@@ -69,7 +106,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 179.0, 202.0, 116.0, 22.0 ],
+					"patching_rect" : [ 232.0, 206.0, 116.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -81,7 +118,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.0, 202.0, 116.0, 22.0 ],
+					"patching_rect" : [ 96.0, 206.0, 116.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -90,12 +127,12 @@
 				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 276.0, 168.0, 122.0, 22.0 ],
+					"patching_rect" : [ 329.0, 176.0, 92.0, 22.0 ],
 					"style" : "",
-					"text" : "OSC-route /hearbeat"
+					"text" : "route /hearbeat"
 				}
 
 			}
@@ -106,7 +143,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 134.0, 99.0, 22.0 ],
+					"patching_rect" : [ 83.0, 146.0, 99.0, 22.0 ],
 					"style" : "",
 					"text" : "/lisa /heartbeat 0"
 				}
@@ -116,12 +153,12 @@
 				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 140.0, 168.0, 122.0, 22.0 ],
+					"patching_rect" : [ 193.0, 176.0, 92.0, 22.0 ],
 					"style" : "",
-					"text" : "OSC-route /hearbeat"
+					"text" : "route /hearbeat"
 				}
 
 			}
@@ -132,7 +169,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 140.0, 99.0, 99.0, 22.0 ],
+					"patching_rect" : [ 193.0, 111.0, 99.0, 22.0 ],
 					"style" : "",
 					"text" : "udpreceive 5500"
 				}
@@ -142,12 +179,12 @@
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 140.0, 134.0, 291.0, 22.0 ],
+					"patching_rect" : [ 193.0, 146.0, 291.0, 22.0 ],
 					"style" : "",
-					"text" : "OSC-route /danielle /lisa"
+					"text" : "route /danielle /lisa"
 				}
 
 			}
@@ -258,10 +295,6 @@
 				"bootpath" : "~/github/montoyamoraga/project_streb/current/streb Project",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "OSC-route.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0
