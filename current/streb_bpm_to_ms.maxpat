@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 561.0, 252.0, 640.0, 480.0 ],
+		"rect" : [ 561.0, 252.0, 221.0, 287.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 246.0, 224.0, 30.0, 30.0 ],
+					"patching_rect" : [ 15.0, 186.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -55,7 +55,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 302.0, 194.0, 26.0, 20.0 ],
+					"patching_rect" : [ 71.0, 156.0, 26.0, 20.0 ],
 					"style" : "",
 					"text" : "ms"
 				}
@@ -70,7 +70,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 246.0, 194.0, 50.0, 22.0 ],
+					"patching_rect" : [ 15.0, 156.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -81,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 302.0, 166.0, 67.0, 20.0 ],
+					"patching_rect" : [ 71.0, 128.0, 67.0, 20.0 ],
 					"style" : "",
 					"text" : "bpm to ms"
 				}
@@ -94,7 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 246.0, 166.0, 55.0, 22.0 ],
+					"patching_rect" : [ 15.0, 128.0, 55.0, 22.0 ],
 					"style" : "",
 					"text" : "!/ 60000."
 				}
@@ -106,7 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 302.0, 138.0, 34.0, 20.0 ],
+					"patching_rect" : [ 71.0, 100.0, 34.0, 20.0 ],
 					"style" : "",
 					"text" : "bpm"
 				}
@@ -120,7 +120,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 246.0, 138.0, 50.0, 22.0 ],
+					"patching_rect" : [ 15.0, 100.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -132,8 +132,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 278.5, 224.0, 48.0, 33.0 ],
-					"presentation_rect" : [ 282.0, 262.0, 0.0, 0.0 ],
+					"patching_rect" : [ 47.5, 186.0, 48.0, 33.0 ],
 					"style" : "",
 					"text" : "output\nin ms"
 				}
@@ -146,7 +145,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 278.5, 100.0, 47.0, 33.0 ],
+					"patching_rect" : [ 47.5, 62.0, 47.0, 33.0 ],
 					"style" : "",
 					"text" : "input\nin bpm"
 				}
@@ -185,7 +184,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 246.0, 100.0, 30.0, 30.0 ],
+					"patching_rect" : [ 15.0, 62.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
