@@ -2,7 +2,7 @@
 //by aaron montoya-moraga, lisa jamhoury
 //commisioned by lisa jamhoury and aaron parsekian
 //april 2017
-//v0.0.2
+//v0.0.3
 
 //setup() runs once at the beginning
 void setup() {
