@@ -38,14 +38,63 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 183.0, 36.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 34.0, 119.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 100.0, 16.0, 70.0, 20.0 ],
+					"style" : "",
+					"text" : "readme file"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 13.0, 15.0, 85.0, 22.0 ],
+					"style" : "",
+					"text" : "streb_readme"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 83.0, 80.0, 22.0 ],
+					"patching_rect" : [ 34.0, 83.0, 138.0, 22.0 ],
 					"style" : "",
-					"text" : "send_dancer"
+					"text" : "streb_send_dancer 500"
 				}
 
 			}
@@ -387,30 +436,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 16.0, 70.0, 20.0 ],
-					"style" : "",
-					"text" : "readme file"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 15.0, 85.0, 22.0 ],
-					"style" : "",
-					"text" : "readme_streb"
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -429,6 +454,15 @@
 					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -526,14 +560,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "readme_streb.maxpat",
-				"bootpath" : "~/github/montoyamoraga/project_streb/current/streb Project",
+				"name" : "streb_send_dancer.maxpat",
+				"bootpath" : "~/github/montoyamoraga/project_streb/current",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "send_dancer.maxpat",
-				"bootpath" : "~/github/montoyamoraga/project_streb/current/streb Project",
+				"name" : "streb_readme.maxpat",
+				"bootpath" : "~/github/montoyamoraga/project_streb/current",
 				"type" : "JSON",
 				"implicit" : 1
 			}

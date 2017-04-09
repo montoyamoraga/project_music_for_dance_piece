@@ -55,7 +55,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 676.0, 111.0, 29.0, 20.0 ],
-					"presentation_rect" : [ 619.0, 99.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "lisa"
 				}
@@ -208,7 +207,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 15.0, 85.0, 22.0 ],
 					"style" : "",
-					"text" : "readme_streb"
+					"text" : "streb_readme"
 				}
 
 			}
@@ -291,8 +290,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "readme_streb.maxpat",
-				"bootpath" : "~/github/montoyamoraga/project_streb/current/streb Project",
+				"name" : "streb_readme.maxpat",
+				"bootpath" : "~/github/montoyamoraga/project_streb/current",
 				"type" : "JSON",
 				"implicit" : 1
 			}

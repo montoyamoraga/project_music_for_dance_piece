@@ -38,13 +38,14 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "comment",
+					"id" : "obj-2",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 113.0, 150.0, 20.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 191.0, 193.0, 107.0, 22.0 ],
 					"style" : "",
-					"text" : "initial tempo is 120 bpm"
+					"text" : "streb_bpm_to_ms"
 				}
 
 			}
@@ -54,7 +55,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 16.0, 70.0, 20.0 ],
+					"patching_rect" : [ 102.0, 18.0, 70.0, 20.0 ],
 					"style" : "",
 					"text" : "readme file"
 				}
@@ -66,9 +67,21 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 15.0, 85.0, 22.0 ],
+					"patching_rect" : [ 15.0, 17.0, 85.0, 22.0 ],
 					"style" : "",
-					"text" : "readme_streb"
+					"text" : "streb_readme"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 191.0, 113.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "initial tempo is 120 bpm"
 				}
 
 			}
@@ -165,7 +178,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 447.0, 148.0, 103.0, 20.0 ],
+					"patching_rect" : [ 531.0, 120.0, 103.0, 20.0 ],
 					"style" : "",
 					"text" : "input from sensor"
 				}
@@ -177,7 +190,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 447.0, 173.0, 63.0, 20.0 ],
+					"patching_rect" : [ 531.0, 145.0, 63.0, 20.0 ],
 					"style" : "",
 					"text" : "serial port"
 				}
@@ -190,7 +203,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 401.0, 172.0, 39.0, 22.0 ],
+					"patching_rect" : [ 485.0, 144.0, 39.0, 22.0 ],
 					"style" : "",
 					"text" : "serial"
 				}
@@ -268,31 +281,6 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 191.0, 220.0, 50.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 247.0, 192.0, 67.0, 20.0 ],
-					"style" : "",
-					"text" : "bpm to ms"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-42",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 191.0, 192.0, 55.0, 22.0 ],
-					"style" : "",
-					"text" : "!/ 60000."
 				}
 
 			}
@@ -421,6 +409,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -457,19 +454,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-42", 0 ]
 				}
 
 			}
@@ -513,8 +501,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "readme_streb.maxpat",
-				"bootpath" : "~/github/montoyamoraga/project_streb/current/streb Project",
+				"name" : "streb_readme.maxpat",
+				"bootpath" : "~/github/montoyamoraga/project_streb/current",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "streb_bpm_to_ms.maxpat",
+				"bootpath" : "~/github/montoyamoraga/project_streb/current",
 				"type" : "JSON",
 				"implicit" : 1
 			}
