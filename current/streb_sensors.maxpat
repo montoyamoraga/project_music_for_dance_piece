@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 231.0, 79.0, 846.0, 654.0 ],
+		"rect" : [ 257.0, 79.0, 846.0, 654.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 466.222229, 499.0, 117.0, 33.0 ],
-					"presentation_rect" : [ 468.222229, 498.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "send to computer 2\non port 5501"
 				}
@@ -86,7 +85,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 139.5, 465.5, 126.0, 22.0 ],
+					"patching_rect" : [ 100.0, 467.5, 126.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 139.5, 465.5, 126.0, 22.0 ],
 					"style" : "",
@@ -537,7 +536,6 @@
 					}
 ,
 					"patching_rect" : [ 497.833374, 439.0, 180.333313, 22.0 ],
-					"presentation_rect" : [ 515.833374, 422.0, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1144,7 +1142,7 @@
 					"presentation_rect" : [ 157.0, 73.0, 18.0, 86.0 ],
 					"size" : 6,
 					"style" : "",
-					"value" : 2
+					"value" : 3
 				}
 
 			}
@@ -1629,7 +1627,7 @@
 					"presentation_rect" : [ 16.0, 73.0, 18.0, 86.0 ],
 					"size" : 6,
 					"style" : "",
-					"value" : 3
+					"value" : 0
 				}
 
 			}
@@ -1690,6 +1688,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 521.222229, 294.5, 29.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 521.222229, 294.5, 29.0, 20.0 ],
 					"style" : "",
 					"text" : "lisa"
 				}
@@ -1702,6 +1702,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 344.222229, 294.5, 52.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 344.222229, 294.5, 52.0, 20.0 ],
 					"style" : "",
 					"text" : "danielle"
 				}
@@ -1749,6 +1751,8 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 466.222229, 294.5, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 466.222229, 294.5, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1839,6 +1843,8 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 291.222229, 292.5, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 291.222229, 292.5, 50.0, 22.0 ],
 					"style" : ""
 				}
 
