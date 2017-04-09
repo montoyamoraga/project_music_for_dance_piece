@@ -4,33 +4,20 @@
 //april 2017
 //v0.0.1
 
-//import osc library
-import netP5.*;
-import oscP5.*;
-
-//declare osc handler
-OscP5 oscHandler;
-
-//declare array for storing ip addresses
-//of computers to send to
-NetAddress[] addresses = new NetAddress[2];
-
-//declare ports for send and receive
-int portSend;
-int portReceive;
-
-//declare function for setup osc
-void oscSetup() {
-  
-  //
-}
-
-
-
+//setup() runs once at the beginning
 void setup() {
+  //setup canvas size
+  size(400, 400);
+  
+  //background color
+  background(random(255), random(255), random(255));
+  
+  //setup osc
+  oscSetup(5501);
   
 }
 
+//draw() runs after setup(), on a loop
 void draw() {
   
 }
