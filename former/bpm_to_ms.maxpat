@@ -153,30 +153,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 102.0, 18.0, 70.0, 20.0 ],
-					"style" : "",
-					"text" : "readme file"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 17.0, 85.0, 22.0 ],
-					"style" : "",
-					"text" : "streb_readme"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
 					"index" : 0,
@@ -227,13 +203,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "streb_readme.maxpat",
-				"bootpath" : "~/github/montoyamoraga/project_streb/current",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 

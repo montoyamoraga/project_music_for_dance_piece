@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 88.0, 104.0, 443.0, 188.0 ],
+		"rect" : [ 70.0, 578.0, 443.0, 188.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 6,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 87.0, 168.0, 87.0 ],
+					"patching_rect" : [ 9.0, 87.0, 131.0, 47.0 ],
 					"style" : "",
-					"text" : "files:\nreadme_streb.maxpat\nreceive_danielle_lisa.maxpat\nsend_dancer.maxpat\nsend_danielle.maxpat\nsend_lisa.maxpat"
+					"text" : "files:\nstreb_readme.maxpat\nstreb_sensors.maxpat"
 				}
 
 			}
@@ -71,7 +71,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.0, 8.0, 287.0, 74.0 ],
 					"style" : "",
-					"text" : "streb piece\nby aaron montoya-moraga\ncommisioned by lisa jamhoury and aaron parsekian\napril 2017\nv0.0.1\n"
+					"text" : "streb piece\nby aaron montoya-moraga\ncommisioned by lisa jamhoury and aaron parsekian\napril 2017\nv0.0.2"
 				}
 
 			}
