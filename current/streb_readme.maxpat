@@ -56,9 +56,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 303.0, 8.0, 121.0, 47.0 ],
+					"patching_rect" : [ 303.0, 8.0, 140.0, 47.0 ],
 					"style" : "",
-					"text" : "upd ports:\ndanielle is port 5500\nlisa is port 5501"
+					"text" : "upd ports:\ncomputer 1 is port 5501\ncomputer 2 is port 5502"
 				}
 
 			}
@@ -71,7 +71,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.0, 8.0, 287.0, 74.0 ],
 					"style" : "",
-					"text" : "streb piece\nby aaron montoya-moraga\ncommisioned by lisa jamhoury and aaron parsekian\napril 2017\nv0.0.2"
+					"text" : "streb piece\nby aaron montoya-moraga\ncommisioned by lisa jamhoury and aaron parsekian\napril 2017\nv0.0.3"
 				}
 
 			}
