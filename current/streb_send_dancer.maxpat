@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 88.0, 104.0, 928.0, 662.0 ],
+		"rect" : [ 88.0, 104.0, 763.0, 662.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 270.0, 450.0, 107.0, 47.0 ],
+					"style" : "",
+					"text" : "send through udp\nto localhost\nto port 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 118.0, 384.0, 48.0, 22.0 ],
+					"style" : "",
+					"text" : "port $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
 					"index" : 0,
@@ -45,7 +71,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 63.0, 30.0, 30.0 ],
+					"patching_rect" : [ 136.0, 79.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -57,7 +83,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 136.0, 108.0, 24.0, 24.0 ],
+					"patching_rect" : [ 136.0, 116.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -165,26 +191,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-73",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 270.0, 452.0, 142.0, 33.0 ],
-					"style" : "",
-					"text" : "lisa is sent thorugh port 5501"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 270.0, 421.0, 137.0, 22.0 ],
+					"patching_rect" : [ 270.0, 421.0, 117.0, 22.0 ],
 					"style" : "",
-					"text" : "udpsend localhost 5501"
+					"text" : "udpsend localhost 0"
 				}
 
 			}
@@ -207,7 +220,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 416.0, 421.0, 99.0, 22.0 ],
+					"patching_rect" : [ 392.0, 421.0, 99.0, 22.0 ],
 					"style" : "",
 					"text" : "/lisa /heartbeat 1"
 				}
@@ -472,7 +485,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 291.0, 30.0, 30.0 ],
+					"patching_rect" : [ 270.0, 305.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -540,6 +553,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
