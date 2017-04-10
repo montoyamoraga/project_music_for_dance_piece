@@ -41,6 +41,6 @@ void oscEvent(OscMessage newMessage) {
     //check if header matches /lisa/heartbeat
   } else if (newMessage.checkAddrPattern("/lisa/heartbeat")) {
     heartBeatLisa = newMessage.get(0).intValue();
-    println("lisa: " + heartBeatLisa);
+   // println("lisa: " + heartBeatLisa);
   }
 }
