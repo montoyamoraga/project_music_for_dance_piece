@@ -6,13 +6,13 @@ class Circle {
   float size = base;
   
   // calculations for growing heart over time 
-  float targetSize = width-base;
+  float targetSize = height-base;
   float timeToTarget = 300000; //5 mins in millis = 300000
   float inc = targetSize/timeToTarget;
   
   
   void growHeart() {
-    int elapsedM = millis();
+    int elapsedM = millis() - startTime;
     initSize = base + (inc * elapsedM);    
   }
   
