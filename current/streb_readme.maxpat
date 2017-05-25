@@ -71,7 +71,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.0, 8.0, 287.0, 74.0 ],
 					"style" : "",
-					"text" : "streb piece\nby aaron montoya-moraga\ncommisioned by lisa jamhoury and aaron parsekian\nmay 2017\nv0.0.5"
+					"text" : "streb piece\nby aaron montoya-moraga\ncommisioned by lisa jamhoury and aaron parsekian\nmay 2017\nv0.0.6"
 				}
 
 			}
