@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 3,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -71,14 +71,12 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.0, 8.0, 287.0, 74.0 ],
 					"style" : "",
-					"text" : "streb piece\nby aaron montoya-moraga\ncommisioned by lisa jamhoury and aaron parsekian\napril 2017\nv0.0.4"
+					"text" : "streb piece\nby aaron montoya-moraga\ncommisioned by lisa jamhoury and aaron parsekian\nmay 2017\nv0.0.5"
 				}
 
 			}
  ],
-		"lines" : [  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+		"lines" : [  ]
 	}
 
 }
